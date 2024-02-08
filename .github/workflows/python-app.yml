@@ -12,7 +12,7 @@ jobs:
         python-version: ["3.9", "3.10", "3.11"]
 
     steps:
-    - run: echo "default branch is $default-branch"
+    - run: echo "default branch is ${default-branch}"
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
